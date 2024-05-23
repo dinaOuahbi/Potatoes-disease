@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+<title>Potatos desease</title>
+
+{% endblock %}
+
+
+{% block body %}
+    <div class="wrapper">
+        <h2>Potatos Desease</h2>
+        <p>
+            Farmers who grow potatoes are facing lot of economic losses every year 
+            because of various diseases that can happen to a potato plant.
+            There are two common diseases known as early blight and late blight.
+            Early blight is caused by a fungus and late blight is caused by a specific 
+            microorganism. And if a farmer can detect these diseases early and apply 
+            appropriate treatment, then it can save lot of waste and prevent the economic loss.
+            The tratments for early blight and late blight are little different so it's 
+            important that you accurately identify what kind of disease is there in that potato plant. 
+            
+        </p>
+    </div>
+    <div class="wrapper">
+        <form method="post" enctype="multipart/form-data">
+            <h1>Upload new File</h1>
+            <div class="input-box">
+                <input type="text" placeholder="Username" 
+                required>
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="input-box">
+                <input type=file
+                placeholder="File" name=file required>
+                <i class='bx bxs-lock-alt' ></i>
+            </div>
+
+            <div class="remember-forgot">
+                <label><input type="checkbox">Remember me</label>
+                <a href="#">Forgot password?</a>
+            </div>
+
+            <button type=submit class="btn" value=Upload>Predict</button>
+
+            <div class="register-link">
+                <p>Author <a href="https://github.com/dinaOuahbi">OUAHBI Dina</a></p>
+            </div>
+        </form>
+    </div>
+
+
+
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+<title>Potatos desease - Result</title>
+
+{% endblock %}
+
+
+{% block body %}
+    <div class="wrapper">
+        <h2>Potatos Desease - Result</h2>
+        <p>predicted_class: {{ predicted_class }}</p>
+        <p>confidence: {{ confidence }}</p>
+    </div>
+
+{% endblock %}
